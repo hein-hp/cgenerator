@@ -22,9 +22,9 @@ public final class Constant {
     /**
      * Prefix
      */
-    public static final String DATABASE_PREFIX = "hein.database" + DOT;
-    public static final String EXTRA_PREFIX = "hein.extra" + DOT;
-    public static final String GENERATOR_PREFIX = "hein.generator" + DOT;
+    public static final String DATABASE_PREFIX = "cgenerator.database" + DOT;
+    public static final String EXTRA_PREFIX = "cgenerator.extra" + DOT;
+    public static final String GENERATOR_PREFIX = "cgenerator.generator" + DOT;
 
     /**
      * Suffix
