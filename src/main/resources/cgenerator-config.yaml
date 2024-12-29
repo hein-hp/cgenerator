@@ -1,0 +1,30 @@
+cgenerator:
+  # 数据源配置
+  database:
+    jdbc:
+      url: jdbc:mysql://ip:port/database?useSSL=false&serverTimezone=UTC
+      username: username
+      password: password
+      driver: com.mysql.cj.jdbc.Driver
+  # 表生成参数配置
+  generator:
+    # 生成表
+    generate-table:
+      all: false
+      names:
+        - table-name
+    # 忽略表前缀
+    ignore-table-prefix:
+      ignore: true
+      values:
+        - t_
+    # 生成包结构
+    packages:
+      entity: org.hein.dao.entity
+      mapper: org.hein.dao.mapper
+      service: org.hein.service
+      controller: org.hein.controller
+    # 生成类型：可选 mybatis | mybatis-plus
+    generate-type: mybatis
+  extra:
+    author: hein
