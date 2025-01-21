@@ -28,8 +28,6 @@ public class ExtraInfoHandler implements BuildTableInfoFilter<List<TableInfo>> {
     }
 
     private void setFlagIfContains(Consumer<Boolean> setter, Set<String> types, String sqlType) {
-        if (types.contains(sqlType.toLowerCase())) {
-            setter.accept(true);
-        }
+        setter.accept(types.contains(sqlType.toLowerCase()));
     }
 }
