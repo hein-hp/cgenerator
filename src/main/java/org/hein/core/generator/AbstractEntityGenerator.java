@@ -32,8 +32,8 @@ public abstract class AbstractEntityGenerator extends AbstractCodeGenerator {
         if (tableInfo.getHasDate().equals(Boolean.TRUE) || tableInfo.getHasDateTime().equals(Boolean.TRUE)) {
             writer.write("import java.util.Date;");
             writer.newLine();
-            writer.newLine();
         }
+        writer.newLine();
         writer.write("/**");
         writer.newLine();
         writer.write(" * " + tableInfo.getComment() + "实体");
